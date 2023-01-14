@@ -1,5 +1,9 @@
 # Steps up to now
 ## Step 1-0 (set up simple bootstrap page)
+- Put back in a main.js in the js directory
+- Made that js file include the bootstrap stuff
+- Made vite.config.js pick up where the bootstrap files are (in node_modules)
+- Added some HTML with some bootstrap stuff
 
 ## Step 0-3 (Seems like a lot but it's pretty simple)
 - Remove the main.js and the line in index.html that included it
