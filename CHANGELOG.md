@@ -1,5 +1,8 @@
 # Steps up to now
-
+## Step 2-0 (final)
+- Now we're getting something interesting
+- The select suddenly has some things to select in it! How? The HTML didn't change! Look at the main.js file
+- The main.js file has more comments than code, but read it carefully. There's some things in there that are cool (like ternary/conditional operators and magic arrays)
 
 ## Step 1-1 (getting more interesting)
 - Connected the button to a modal (just like we normally do - but in Bootstrap 5 the data names are a little different)
