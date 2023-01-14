@@ -5,9 +5,9 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
   if (command === "serve") {
     return {
       // dev specific config
+      root: path.resolve(__dirname, "src"),
       build: {
-        root: path.resolve(__dirname, "src"),
-        outDir: "dist",
+        outDir: path.resolve(__dirname, "dist"),
         minify: false,
         sourcemap: true,
       },
@@ -20,9 +20,9 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     // command === 'build'
     return {
       // build specific config
+      root: path.resolve(__dirname, "src"),
       build: {
-        root: path.resolve(__dirname, "src"),
-        outDir: "dist",
+        outDir: path.resolve(__dirname, "dist"),
         minify: "esbuild", // this is the default, just showing that it's an option
         sourcemap: false,
       },
