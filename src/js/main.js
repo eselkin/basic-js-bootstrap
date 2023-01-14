@@ -50,10 +50,10 @@ select.addEventListener("change", (e) => {
 });
 
 reserveButton.addEventListener("click", (e) => {
-  // what is an alert?
+  // what is an alert? Why do we need the parenthesis around the ternary operator (order of operations and precedence)? https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
   alert(
-    "You reserved for " + select.value + Number(select.value) === 1
-      ? " person!"
-      : " people!"
+    "You reserved for " +
+      select.value +
+      (Number(select.value) === 1 ? " person!" : " people!")
   );
 });
