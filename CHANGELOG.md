@@ -1,5 +1,6 @@
 # Steps up to now
-##
+## Step 1-0 (set up simple bootstrap page)
+
 ## Step 0-3 (Seems like a lot but it's pretty simple)
 - Remove the main.js and the line in index.html that included it
 - Add @popper-js/core (for bootstrap popups)
