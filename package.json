@@ -1,0 +1,19 @@
+{
+  "name": "week3-js-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eselkin/basic-js-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eselkin/basic-js-bootstrap/issues"
+  },
+  "homepage": "https://github.com/eselkin/basic-js-bootstrap#readme"
+}
