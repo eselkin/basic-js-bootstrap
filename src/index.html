@@ -18,13 +18,38 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mt-sm-4 mt-lg-0 mb-lg-0">
-            <li><button type="button" class="btn btn-info">Reserve
+            <li><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve
                 a
                 Campsite</button></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="reserveModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="reserveModalLabel">Reserve a Campsite</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label>
+                How many people
+                <select class="form-select" id="campsite-select">
+                  <option value="">Select how many people</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button id="reserve-button" type="button" class="btn btn-light" disabled>Reserve</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>

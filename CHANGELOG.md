@@ -1,4 +1,10 @@
 # Steps up to now
+
+
+## Step 1-1 (getting more interesting)
+- Connected the button to a modal (just like we normally do - but in Bootstrap 5 the data names are a little different)
+- But it still looks super simple and the select has nothing in it, and the Reserve button is disabled, why? See next step
+
 ## Step 1-0 (set up simple bootstrap page)
 - Put back in a main.js in the js directory
 - Made that js file include the bootstrap stuff
