@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bootstrap Demo in Vite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,9 +21,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mt-sm-4 mt-lg-0 mb-lg-0">
-            <li><button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve
-                a
-                Campsite</button></li>
+            <li><button type="button" class="btn btn-info" id="reserve-modal-button">Reserve
+                a Campsite</button></li>
           </ul>
         </div>
       </div>
@@ -45,12 +47,47 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+              id="reserve-close-button">Close</button>
             <!-- Same here, there's some fancy stuff going on, but this line looks pretty simple! See comment above. -->
             <button id="reserve-button" type="button" class="btn btn-light" disabled>Reserve</button>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="container container-xl w-100 h-100">
+      <div id="carousel-with-controls"
+        class="carousel slide w-100 col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/boat.jpg" class="d-block w-100" alt="A boat on the water">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/racecar.webp" class="d-block w-100" alt="A fast red racecar">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/train.jpg" class="d-block w-100" alt="The dependable train">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-with-controls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-with-controls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="mx-auto col-12 col-lg-6 offset-lg-3">
+        <h1 class="display-3 text-center scripty">Choose your activity</h1>
+      </div>
+    </div>
+
+
+    <div id="success-alert" class="alert alert-success d-none fixed-bottom" role="alert">
     </div>
   </div>
   <script type="module" src="js/main.js"></script>

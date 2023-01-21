@@ -1,5 +1,12 @@
 # Steps up to now
-## Step 2-0 (final)
+
+## Step 3-0
+- Added some images in the assets directory
+- Added a carousel (similar to in bootstrap 4)
+- Added some javascript actions. When you submit the form on reserveCampsite's modal, the modal will close and an alert message will appear at the bottom of the screen (and then vanish -- how did I do that?)
+- Just like in your Week 4 workshop, I made the click of the button do something (show the modal) -- you'll see some new things there, the "new" keyword is one of them
+- All the col-size-... are the same as in bootstrap 4 
+## Step 2-0
 - Now we're getting something interesting
 - The select suddenly has some things to select in it! How? The HTML didn't change! Look at the main.js file
 - The main.js file has more comments than code, but read it carefully. There's some things in there that are cool (like ternary/conditional operators and magic arrays)
